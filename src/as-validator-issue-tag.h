@@ -839,7 +839,7 @@ AsValidatorIssueTag as_validator_issue_tag_list[] =  {
 
 	{ "metainfo-legacy-path",
 	  AS_ISSUE_SEVERITY_WARNING,
-	  N_("The metainfo file is stored in a legacy path. Please place it in `/usr/share/metainfo/`."),
+	  N_("The metainfo file is stored in a legacy path. Please place it in `/usr/local/share/metainfo/`."),
 	},
 
 	{ "metainfo-multiple-components",

@@ -154,14 +154,14 @@ AscHintTagStatic asc_hint_tag_list[] =  {
 	  AS_ISSUE_SEVERITY_WARNING,
 	  "Unable to add languages information, even though a <code>translation</code> tag was present in the MetaInfo file. "
 	  "Please check that its value is set correctly, and all locale files are placed in the right directories "
-	  "(e.g. <code>/usr/share/locale/*/LC_MESSAGES/</code> for Gettext .mo files)."
+	  "(e.g. <code>/usr/local/share/locale/*/LC_MESSAGES/</code> for Gettext .mo files)."
 	},
 
 	{ "icon-not-found",
 	  AS_ISSUE_SEVERITY_ERROR,
 	  "The icon <em>{{icon_fname}}</em> was not found in the archive. This issue can have multiple reasons, "
 	  "like the icon being in a wrong directory or not being available in a suitable size (at least 64x64px). "
-	  "To make the icon easier to find, place it in <code>/usr/share/icons/hicolor/&lt;size&gt;/apps</code> and ensure the <code>Icon=</code> value"
+	  "To make the icon easier to find, place it in <code>/usr/local/share/icons/hicolor/&lt;size&gt;/apps</code> and ensure the <code>Icon=</code> value"
 	  "of the desktop-entry file is set correctly."
 	},
 

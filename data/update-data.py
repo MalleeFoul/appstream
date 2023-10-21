@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/local/bin/env python3
 #
 # Copyright (C) 2015-2022 Matthias Klumpp <mak@debian.org>
 #

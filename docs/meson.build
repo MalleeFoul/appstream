@@ -96,7 +96,7 @@ as_doc_src = [
     'xml/quickstart-translation.xml',
 ]
 
-hljs_installed_file = '/usr/share/javascript/highlight.js/highlight.min.js'
+hljs_installed_file = '/usr/local/share/javascript/highlight.js/highlight.min.js'
 if get_option('docs')
     daps_exe = find_program('daps')
     python_exe = find_program('python3', 'python')

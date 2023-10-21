@@ -15,7 +15,7 @@
 			This metainfo specification describes how metadata for icon themes should be structured.
 		</para>
 		<para>
-			Icon theme packages can ship one or more files in <filename>/usr/share/metainfo/%{id}.metainfo.xml</filename>.
+			Icon theme packages can ship one or more files in <filename>/usr/local/share/metainfo/%{id}.metainfo.xml</filename>.
 		</para>
 		<para>
 			Icon theme metadata files can – just like all other metainfo files – be translated. See the section about translation for more information.

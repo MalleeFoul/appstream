@@ -17,7 +17,7 @@
 			used by others and may even be directly distributed as part of tranditional Linux distributions.
 		</para>
 		<para>
-			Runtimes can ship metainfo files in <filename>/usr/share/metainfo/%{id}.metainfo.xml</filename>.
+			Runtimes can ship metainfo files in <filename>/usr/local/share/metainfo/%{id}.metainfo.xml</filename>.
 		</para>
 	</section>
 

@@ -15,7 +15,7 @@
 			It usually <literal>provides</literal> one or multiple modaliases.
 		</para>
 		<para>
-			Drivers can ship one or more files in <filename>/usr/share/metainfo/%{id}.metainfo.xml</filename>.
+			Drivers can ship one or more files in <filename>/usr/local/share/metainfo/%{id}.metainfo.xml</filename>.
 		</para>
 	</section>
 

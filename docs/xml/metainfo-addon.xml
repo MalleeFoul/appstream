@@ -15,7 +15,7 @@
 			The <literal>addon</literal> component type exists to reflect that.
 		</para>
 		<para>
-			Software which provides addons can ship one or more files in <filename>/usr/share/metainfo/%{id}.metainfo.xml</filename>.
+			Software which provides addons can ship one or more files in <filename>/usr/local/share/metainfo/%{id}.metainfo.xml</filename>.
 		</para>
 	</section>
 

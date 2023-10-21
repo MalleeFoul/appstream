@@ -758,7 +758,7 @@ test_filemonitor_dir (void)
 	guint cnt_changed = 0;
 	g_autoptr(AsFileMonitor) mon = NULL;
 	g_autoptr(GError) error = NULL;
-	const gchar *tmpdir = "/tmp/as-monitor-test/usr/share/appstream/xml";
+	const gchar *tmpdir = "/tmp/as-monitor-test/usr/local/share/appstream/xml";
 	g_autofree gchar *tmpfile = NULL;
 	g_autofree gchar *tmpfile_new = NULL;
 	g_autofree gchar *cmd_touch = NULL;

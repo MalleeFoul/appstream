@@ -612,7 +612,7 @@ as_context_ensure_os_config_loaded (AsContext *ctx)
 	if (priv->free_origin_globs != NULL)
 		return;
 
-	/* load data from /etc, but fall back to the default in /usr/share if the override does not exist */
+	/* load data from /etc, but fall back to the default in /usr/local/share if the override does not exist */
 	as_config_fname = SYSCONFDIR "/appstream.conf";
 	if (!g_file_test (as_config_fname, G_FILE_TEST_EXISTS))
 		as_config_fname = AS_DATADIR "/appstream.conf";

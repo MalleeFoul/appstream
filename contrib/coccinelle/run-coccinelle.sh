@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/local/bin/env bash
 # SPDX-License-Identifier: LGPL-2.1-or-later
 set -e
 
@@ -21,7 +21,7 @@ for script in "${SCRIPTS[@]}"; do
     echo "--x-- Processing $script --x--"
     spatch \
         --smpl-spacing \
-        --macro-file "/usr/include/glib-2.0/glib/gmacros.h" \
+        --macro-file "/usr/local/include/glib-2.0/glib/gmacros.h" \
         --sp-file \
         "$script" \
         "${ARGS[@]}" \

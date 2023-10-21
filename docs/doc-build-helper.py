@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/local/bin/env python3
 #
 # Copyright (C) 2016-2023 Matthias Klumpp <matthias@tenstral.net>
 #
@@ -30,7 +30,7 @@ from pathlib import Path
 
 
 # additional CSS from system locations, we use it if available
-EXTRA_CSS = [['/usr/share/javascript/highlight.js/styles/routeros.css', 'highlight.css']]
+EXTRA_CSS = [['/usr/local/share/javascript/highlight.js/styles/routeros.css', 'highlight.css']]
 
 
 def daps_build(src_dir, project_name, daps_exe):

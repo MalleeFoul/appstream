@@ -41,7 +41,7 @@ git push
 6. Upload tarball: scp -r *.tar.xz* annarchy.freedesktop.org:/srv/www.freedesktop.org/www/software/appstream/releases/
 
 7. Upload documentation:
-   scp -r build/release_install/usr/local/share/doc/appstream/html/* annarchy.freedesktop.org:/srv/www.freedesktop.org/www/software/appstream/docs/
+   scp -r build/release_install/usr/local/local/share/doc/appstream/html/* annarchy.freedesktop.org:/srv/www.freedesktop.org/www/software/appstream/docs/
 
 8. Do post release version bump in meson.build, RELEASE
 

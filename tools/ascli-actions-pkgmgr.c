@@ -42,12 +42,12 @@ exec_pm_action (const gchar *action, gchar **pkgnames)
 	g_auto(GStrv) cmd = NULL;
 
 #ifdef HAVE_APT_SUPPORT
-	if (g_file_test ("/usr/bin/apt", G_FILE_TEST_EXISTS))
-		exe = "/usr/bin/apt";
+	if (g_file_test ("/usr/local/bin/apt", G_FILE_TEST_EXISTS))
+		exe = "/usr/local/bin/apt";
 #endif
 	if (exe == NULL) {
-		if (g_file_test ("/usr/bin/pkcon", G_FILE_TEST_EXISTS)) {
-			exe = "/usr/bin/pkcon";
+		if (g_file_test ("/usr/local/bin/pkcon", G_FILE_TEST_EXISTS)) {
+			exe = "/usr/local/bin/pkcon";
 		} else {
 			g_printerr ("%s\n",
 				    _("No suitable package manager CLI found. Please make sure that e.g. \"pkcon\" (part of PackageKit) is available."));
@@ -80,7 +80,7 @@ exec_flatpak_action (const gchar *action, const gchar *bundle_id)
 	const gchar *exe = NULL;
 	g_auto(GStrv) cmd = NULL;
 
-	exe = "/usr/bin/flatpak";
+	exe = "/usr/local/bin/flatpak";
 	if (!g_file_test (exe, G_FILE_TEST_EXISTS)) {
 		g_printerr ("%s\n", _("Flatpak was not found! Please install it to continue."));
 		return ASCLI_EXIT_CODE_FAILED;

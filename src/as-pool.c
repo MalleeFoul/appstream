@@ -103,16 +103,16 @@ static guint signals[SIGNAL_LAST] = { 0 };
 /* Prefixes of locations where system-wide AppStream catalog metadata can be found.
  * TODO: We should really parse $XDG_DATA_DIRS for the /usr location in a safe way,
  * instead of hardcoding one canonical path here. */
-static const gchar *SYSTEM_CATALOG_METADATA_PREFIXES[] = { "/usr/share",
+static const gchar *SYSTEM_CATALOG_METADATA_PREFIXES[] = { "/usr/local/share",
 							   "/var/lib",
 							   "/var/cache",
 							   NULL };
 
 /* where .desktop files are installed to by packages to be registered with the system */
-static gchar *APPLICATIONS_DIR = "/usr/share/applications";
+static gchar *APPLICATIONS_DIR = "/usr/local/share/applications";
 
 /* where metainfo files can be found */
-static gchar *METAINFO_DIR = "/usr/share/metainfo";
+static gchar *METAINFO_DIR = "/usr/local/share/metainfo";
 
 /* cache key used for local metainfo / desktop-entry data */
 static gchar *LOCAL_METAINFO_CACHE_KEY = "local-metainfo";

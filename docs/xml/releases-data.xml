@@ -31,7 +31,7 @@
 			If the <literal>releases</literal> XML is external, the metainfo file must contain a <xref linkend="tag-releases"/> tag with the <literal>type</literal>
 			property set to <code>external</code> as described for component XML.
 			The data described in this section is placed in a separate XML file with <literal>releases</literal> being its root node.
-			The file must be installed as <filename>/usr/share/metainfo/releases/%{cid}.releases.xml</filename>, where <code>cid</code> is the component ID of the component
+			The file must be installed as <filename>/usr/local/share/metainfo/releases/%{cid}.releases.xml</filename>, where <code>cid</code> is the component ID of the component
 			the release information belongs to.
 		</para>
 	</section>

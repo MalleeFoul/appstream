@@ -670,8 +670,8 @@ test_compose_directory_unit (void)
 	g_assert_cmpstr (g_ptr_array_index (contents, 5), ==, "/table.svgz");
 
 	/* read existent data */
-	g_assert_true (asc_unit_file_exists (ASC_UNIT (dirunit), "/usr/dummy"));
-	data = asc_unit_read_data (ASC_UNIT (dirunit), "/usr/dummy", &error);
+	g_assert_true (asc_unit_file_exists (ASC_UNIT (dirunit), "/usr/local/dummy"));
+	data = asc_unit_read_data (ASC_UNIT (dirunit), "/usr/local/dummy", &error);
 	g_assert_no_error (error);
 	g_assert_nonnull (data);
 	g_assert_cmpstr ((const gchar *) g_bytes_get_data (data, NULL), ==, "Hello Universe!\n");

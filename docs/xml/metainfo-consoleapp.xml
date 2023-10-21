@@ -19,7 +19,7 @@
 		</para>
 		<para>
 			In order to enhance the available metadata about their application, projects shipping a console application can ship one or more metainfo files
-			in <filename>/usr/share/metainfo/%{id}.metainfo.xml</filename>.
+			in <filename>/usr/local/share/metainfo/%{id}.metainfo.xml</filename>.
 		</para>
 
 	</section>

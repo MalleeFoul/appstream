@@ -21,7 +21,7 @@
 		</para>
 		<para>
 			In order to add metadata about a software repository, projects can provide one or more metainfo files
-			in <filename>/usr/share/metainfo/%{id}.metainfo.xml</filename>.
+			in <filename>/usr/local/share/metainfo/%{id}.metainfo.xml</filename>.
 		</para>
 
 	</section>

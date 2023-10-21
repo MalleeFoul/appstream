@@ -2,7 +2,7 @@
 get_filename_component(PACKAGE_PREFIX_DIR "${CMAKE_CURRENT_LIST_DIR}/../../../../" ABSOLUTE)
 
 # Use original install prefix when loaded through a "/usr move"
-# cross-prefix symbolic link such as /lib -> /usr/lib.
+# cross-prefix symbolic link such as /lib -> /usr/local/lib.
 get_filename_component(_realCurr "${CMAKE_CURRENT_LIST_DIR}" REALPATH)
 get_filename_component(_realOrig "@LIBDIR_FULL@/cmake/AppStreamQt5" REALPATH)
 if(_realCurr STREQUAL _realOrig)

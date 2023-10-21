@@ -14,7 +14,7 @@
 			like Debian, Fedora, RHEL, etc. or Windows and macOS.
 		</para>
 		<para>
-			Operating systems can ship metainfo files in <filename>/usr/share/metainfo/%{id}.metainfo.xml</filename>.
+			Operating systems can ship metainfo files in <filename>/usr/local/share/metainfo/%{id}.metainfo.xml</filename>.
 		</para>
 	</section>
 

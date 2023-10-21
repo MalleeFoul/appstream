@@ -30,7 +30,7 @@
 	<title>Filesystem locations</title>
 
 	<para>
-		Upstream projects can ship one or more metainfo files in <filename>/usr/share/metainfo/%{id}.metainfo.xml</filename>, where <literal>id</literal> is a unique
+		Upstream projects can ship one or more metainfo files in <filename>/usr/local/share/metainfo/%{id}.metainfo.xml</filename>, where <literal>id</literal> is a unique
 		identifier of this specific component.
 	</para>
 	<note>
@@ -43,7 +43,7 @@
 	<important>
 		<title>Legacy Path</title>
 		<para>
-			AppStream tools scan the <filename>/usr/share/appdata/</filename> path for legacy compatibility as well. It should not be used
+			AppStream tools scan the <filename>/usr/local/share/appdata/</filename> path for legacy compatibility as well. It should not be used
 			anymore by new software though, even on older Linux distributions (like RHEL 7 and Ubuntu 16.04 LTS) the metainfo path is well
 			supported.
 			Support for the legacy path will likely be dropped completely with a future AppStream 1.0 release.
@@ -529,7 +529,7 @@
 				<title>Local Release Data</title>
 				<para>
 					Please note that even if release data is external and also provided on a remote location, it also <emphasis>must</emphasis> be
-					available locally, installed as a file into <filename>/usr/share/metainfo/releases/%{cid}.releases.xml</filename>.
+					available locally, installed as a file into <filename>/usr/local/share/metainfo/releases/%{cid}.releases.xml</filename>.
 					The local file may not contain all information (for example it may not have a complete release description or all translations),
 					but basic data such as the released versions and their release dates should be present.
 				</para>
@@ -579,7 +579,7 @@
 				<term>&lt;library/&gt;</term>
 				<listitem>
 				<para>
-					Contains the name of a shared library placed in a publicly accessible library path, such as <filename>/usr/lib</filename>, <filename>/usr/lib/&lt;triplet&gt;</filename>
+					Contains the name of a shared library placed in a publicly accessible library path, such as <filename>/usr/local/lib</filename>, <filename>/usr/local/lib/&lt;triplet&gt;</filename>
 					or <filename>/lib</filename>.
 					For example, for the <literal>libappstream</literal> library, the value for <literal>library</literal> would be <code>libappstream.so.1</code>.
 				</para>

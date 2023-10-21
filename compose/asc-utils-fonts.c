@@ -593,7 +593,7 @@ asc_process_fonts (AscResult *cres,
 		g_autofree gchar *basename = NULL;
 		g_autofree gchar *font_fullname_lower = NULL;
 		const gchar *fname = g_ptr_array_index (contents, i);
-		if (!g_str_has_prefix (fname, "/usr/share/fonts/"))
+		if (!g_str_has_prefix (fname, "/usr/local/share/fonts/"))
 			continue;
 		if (!g_str_has_suffix (fname, ".ttf") && !g_str_has_suffix (fname, ".otf"))
 			continue;

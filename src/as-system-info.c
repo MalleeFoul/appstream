@@ -220,7 +220,7 @@ as_system_info_load_os_release (AsSystemInfo *sysinfo, const gchar *os_release_f
 		if (g_file_test ("/etc/os-release", G_FILE_TEST_EXISTS))
 			os_release_fname = "/etc/os-release";
 		else
-			os_release_fname = "/usr/lib/os-release";
+			os_release_fname = "/usr/local/lib/os-release";
 	}
 
 	/* get details about the distribution we are running on */

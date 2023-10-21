@@ -358,7 +358,7 @@ as_pool_scan_apt (AsPool *pool, gboolean force, GError **error)
 	 * So, we hereby simply "own" the icons directory and all it's contents, anything put in there by 3rd-parties will
 	 * be deleted.
 	 * (And there should actually be no cases 3rd-parties put icons there on a Debian machine, since metadata in packages
-	 * will land in /usr/share/swcatalog anyway)
+	 * will land in /usr/local/share/swcatalog anyway)
 	 */
 	as_utils_delete_dir_recursive (appstream_icons_target);
 

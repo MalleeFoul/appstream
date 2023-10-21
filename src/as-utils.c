@@ -2294,7 +2294,7 @@ static const gchar *
 as_metadata_location_get_prefix (AsMetadataLocation location)
 {
 	if (location == AS_METADATA_LOCATION_SHARED)
-		return "/usr/share";
+		return "/usr/local/share";
 	if (location == AS_METADATA_LOCATION_CACHE)
 		return "/var/cache";
 	if (location == AS_METADATA_LOCATION_STATE)
